@@ -46,7 +46,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<div class="navbar-brand" href="./"><img src="img/la-chouette-agence.png" alt="Notre logo, une superbe chouette" height="40" /></div>
+				<a class="navbar-brand" href="./"><img src="img/la-chouette-agence.png" alt="Notre logo, une superbe chouette" height="40" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -95,29 +95,30 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate >
 					<div class="form-group">
-						<label>
+						<label for="nom">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="nom" name="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" name="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
+						<label for="comment-nous-avez-vous-connus">
+							Comment nous avez-vous connus ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input id="comment-nous-avez-vous-connus" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -150,22 +151,22 @@
 				<div class="row row-no-gutters row--social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com" title="twitter"><i class="fa fa-twitter icon-md"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://fr-fr.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://fr-fr.facebook.com" title="facebook"><i class="fa fa-facebook icon-md"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribble.com"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribble.com" title="dribble"><i class="fa fa-dribbble icon-md"></i></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://instagram.com"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://instagram.com" title="instagram"><i class="fa fa-instagram icon-md"></i></a>
 						</div>
 					</div>
 				</div>
